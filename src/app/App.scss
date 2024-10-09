@@ -1,0 +1,10 @@
+@import '../scss/mixins/reset.scss';
+@import '../scss/mixins/variables.scss';
+@import '../scss/mixins/breakpoints.scss';
+@import '../scss/functions/px-to-rem.scss';
+
+.app {
+  background-color: $color_bg;
+  min-width: 100vw;
+  min-height: 100vh;
+}
