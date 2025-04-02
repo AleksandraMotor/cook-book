@@ -20,8 +20,9 @@ const Page = () => {
         <ScrollToTop>
             <Routes>
                 <Route path='/' element={<HomePage/>}/>
-                <Route path='/halloween' element={<div>next</div>}/>
-                <Route path='/contact' element={<div>next 2</div>}/>
+                <Route path='/search' element={<div>search</div>}/>
+                <Route path='/settings' element={<div>settings</div>}/>
+                <Route path='*' element={<div>Page not found</div>}/>
             </Routes>
         </ScrollToTop>
     );

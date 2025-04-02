@@ -7,4 +7,8 @@
   background-color: $color_bg;
   min-width: 100vw;
   min-height: 100vh;
+
+  &__nav, &__footer {
+    background-color: $emphasis_dark;
+  }
 }

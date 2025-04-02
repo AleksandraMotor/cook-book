@@ -1,0 +1,12 @@
+@import '../../scss/functions/px-to-rem.scss';
+@import '../../scss/mixins/breakpoints.scss';
+@import '../../scss/mixins/variables.scss';
+
+.footer {
+    width: 100%;
+    height: toRem(50);
+    color: $color_light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
