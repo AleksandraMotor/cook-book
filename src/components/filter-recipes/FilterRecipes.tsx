@@ -44,7 +44,7 @@ export const RecipesList: React.FC<{ data: DataProps[] }> = ({ data }) => (
     {data.map(recipe => (
       <div key={recipe.id}>
         <h3>{recipe.name}</h3>
-        <p>Description: {recipe.shortDescription}</p>
+        <p>Description: {recipe.description}</p>
         <p>Category: {recipe.category ? recipe.category.join(', ') : ""}</p>
       </div>
     ))}

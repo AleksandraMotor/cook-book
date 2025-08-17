@@ -14,11 +14,11 @@ import sandCake from '../assets/images/test-img/sandCake.jpg';
 export interface DataProps {
     id: number;
     name: string;
-    // resultImg?: string;
+    img?: string;
     category?: string[];
-    shortDescription?: string;
+    description: string;
     // ingredientsList?: any[];
-    // directions?: {
+    // method?: {
     //     id?: number;
     //     img?: string;
     //     description?: string;
@@ -54,15 +54,15 @@ export const Data = [
         id: 0,
         name: 'test',
         category: ['healthy', 'quick&easy', 'spicy'],
-        shortDecription: 'Opis testu'
+        description: 'Opis testu'
     },
     {
         id: 1,
         name: 'Babka piaskowa',
-        resultImg: sandCake,
+        img: sandCake,
         category: ['fancy', 'sweet'],
+        description: 'Nie tylko na Wielkanoc',
         ingredients: ['eggs'],
-        shortDecription: 'Nie tylko na Wielkanoc',
         ingredientsList: [
             '4 whole eggs',
             '1 glass',
@@ -98,10 +98,10 @@ export const Data = [
     {
         id: 2,
         name: 'banana pancakes with blueberries',
-        resultImg: pancakes,
+        img: pancakes,
         category: ['healthy', 'quick snack', 'breakfast&brunch', 'quick&easy', 'pancakes'],
+        description: 'Placki z bananów z borówkami',
         ingredients: ['eggs'],
-        shortDecription: 'Placki z bananów z borówkami',
         // time: {
         //     prepTime: '5 min',
         //     cookTime: '5-10 min',
@@ -132,7 +132,7 @@ export const Data = [
         id: 3,
         name: 'Croutons with garlic butter',
         category: ['quick snack', 'snacks&appetizers', 'quick&easy'],
-        shortDecription: 'Obrać i pokroić czosnek.',
+        description: 'Obrać i pokroić czosnek.',
         ingredients: {
             baguette: 1,
             butter: [50, 'g'], 
@@ -150,9 +150,9 @@ export const Data = [
     {
         id: 4,
         name: 'Spaghetti Bolonese',
-        resultImg: spaghetti,
+        img: spaghetti,
         category: ['quick snack', 'one pot', 'spicy'],
-        shortDecription: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary...',
+        description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary...',
         ingredients: {
             pasta: [300, 'g'],
             oil: [3, 'tablespoon'], 
@@ -184,10 +184,10 @@ export const Data = [
     {
         id: 5,
         name: 'Ciasto wiśniowe',
-        resultImg: sandCake,
+        img: sandCake,
         category: ['quick&easy', 'sweet', 'tea time', 'baked'],
         ingredients: ['eggs', 'cherries', 'flour'],
-        shortDecription: 'Wiśnie lub inne owoce',
+        description: 'Wiśnie lub inne owoce',
         ingredientsList: [
             '4 eggs',
             '1 glass of sugar',
@@ -221,10 +221,10 @@ export const Data = [
     {
         id: 6,
         name: 'Waffles',
-        resultImg: sandCake,
+        img: sandCake,
         category: ['quick&easy', 'sweet'],
         ingredients: ['eggs', 'flour'],
-        shortDecription: 'Gofry',
+        description: 'Gofry',
         ingredientsList: [
             '1,5 glass wheat flour',
             'a pinch of salt',
@@ -240,7 +240,7 @@ export const Data = [
         name: 'Bułka w formie',
         category: ['quick&easy', 'bread'],
         ingredients: ['eggs', 'flour'],
-        shortDecription: 'Bagietki?',
+        description: 'Bagietki?',
         ingredientsList: [
             '20g butter',
             '1 egg white',
@@ -262,7 +262,7 @@ export const Data = [
         name: 'Chałka',
         category: ['quick&easy', 'sweet'],
         ingredients: ['eggs', 'flour'],
-        shortDecription: 'Sweet Bread',
+        description: 'Sweet Bread',
         ingredientsList: [
             '25g wet yeast',
             '50g of sugar',
@@ -284,7 +284,7 @@ export const Data = [
         name: 'Szarlotka',
         category: ['sweet'],
         ingredients: ['eggs', 'flour', 'apples'],
-        shortDecription: 'ApplePie',
+        description: 'ApplePie',
         ingredientsList: [
             '250g margarine',
             '4 egg yolks',
@@ -305,7 +305,7 @@ export const Data = [
         name: 'Bułeczki na śniadanie',
         category: ['quick&easy', 'buns'],
         ingredients: ['eggs', 'flour'],
-        shortDecription: 'buns',
+        description: 'buns',
         ingredientsList: [
             '500g wheat flour 750',
             '4 spoons of butter',
@@ -333,7 +333,7 @@ export const Data = [
         name: 'Chleb podstawowy',
         category: ['quick&easy', 'bread', 'bread machine'],
         ingredients: ['eggs', 'flour'],
-        shortDecription: 'chleb z maszyny 1000g',
+        description: 'chleb z maszyny 1000g',
         ingredientsList: [
             '1 teaspoon of oil',
             '260ml water',
@@ -355,7 +355,7 @@ export const Data = [
         name: 'Chleb pszenno-żytni',
         category: ['quick&easy', 'bread', 'bread machine'],
         ingredients: ['eggs', 'flour'],
-        shortDecription: 'chleb z maszyny 1000g',
+        description: 'chleb z maszyny 1000g',
         ingredientsList: [
             '1 spoon of oil',
             '200g water',
@@ -377,7 +377,7 @@ export const Data = [
         name: 'cucumber soup',
         category: ['quick&easy', 'soup'],
         ingredients: ['cucumber'],
-        shortDecription: 'zupa ogórkowa',
+        description: 'zupa ogórkowa',
         ingredientsList: [
             '2 carrots',
             '0,5 parsley root',
@@ -408,7 +408,7 @@ export const Data = [
         name: 'Barszcz Czerwony z jakiem i ziemniakami',
         category: ['fancy', 'soup'],
         ingredients: ['burak'],
-        shortDecription: 'barszcz czerwony',
+        description: 'barszcz czerwony',
         ingredientsList: [
             '2 carrots',
             '0,5 parsley root',

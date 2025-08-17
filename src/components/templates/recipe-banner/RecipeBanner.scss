@@ -1,0 +1,27 @@
+@import "../../../scss/functions/px-to-rem.scss";
+@import "../../../scss//mixins//variables.scss";
+@import "../../../scss/mixins/breakpoints.scss";
+
+.recipe-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+
+    @include breakpoint-above(sm) {
+        flex-direction: row-reverse;
+    }
+
+    &__image {
+        max-width: 100%;
+
+        img {
+            max-height: toRem(200);
+            max-width: 100%;
+
+                @include breakpoint-above(sm) {
+                    max-height: toRem(500);
+                }
+        }
+    }
+}

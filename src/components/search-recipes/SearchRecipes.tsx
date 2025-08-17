@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { Data, DataProps } from '../../store/RecipesData';
-import search_icon from '../../assets/icons/search_icon.png';
 import { Link } from 'react-router-dom';
 
 import './SearchRecipes.scss';
@@ -26,7 +25,7 @@ export const RecipesList: React.FC<{ data: DataProps[] }> = ({ data }) => (
     {data.map(recipe => (
       <li key={recipe.id}>
         <h3>{recipe.name}</h3>
-        <p>Description: {recipe.shortDescription}</p>
+        <p>Description: {recipe.description}</p>
         <p>Category: {recipe.category}</p>
         <Link to={`/recipes/${recipe.name}`} aria-label='Przejdź do strony przepisu'>Czytaj dalej...</Link>
       </li>

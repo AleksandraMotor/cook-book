@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Data, DataProps } from "../../store/RecipesData";
 
 import "./RecipePage.scss";
+import RecipeBanner from "../../components/templates/recipe-banner/RecipeBanner";
 
 const data: DataProps[] = Data;
 
@@ -21,9 +22,12 @@ const RecipePage = () => {
 
     return (
         <article
+            className="recipe-page"
         >
-            <h2>{recipe.name}</h2>
-            {/* <p>category: {recipe.category} </p> */}
+            <h1 className="recipe-page__title">{recipe.name}</h1>
+            <section>
+                <RecipeBanner name={recipe.name} description={recipe.description} img={recipe.img}/>
+            </section>
         </article>
     );
 };
