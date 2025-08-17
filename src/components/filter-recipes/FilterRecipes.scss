@@ -1,0 +1,8 @@
+@import '../../scss/functions/px-to-rem.scss';
+
+.filter-recipes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: toRem(1000);
+}

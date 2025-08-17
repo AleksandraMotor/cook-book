@@ -1,0 +1,27 @@
+@import '../../scss/functions/px-to-rem.scss';
+@import '../../scss/mixins/variables.scss';
+
+.search-recipes {
+    display: flex;
+    width: 100%;
+    max-width: toRem(1000);
+    background-color: $color_brighter;
+    position: relative;
+
+    &__form {
+        width: 100%;
+    }
+}
+
+.search-bar {
+    width: 100%;
+    height: toRem(55);
+    background-color: transparent;
+    border: toRem(2) solid white;
+}
+
+.recipes-list {
+    position: absolute;
+    top: toRem(55);
+    background-color: white;
+}

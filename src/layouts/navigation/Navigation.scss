@@ -9,7 +9,13 @@
     justify-content: space-between;
     padding: toRem(20);
 
+    &__menu-list {
+        display: flex;
+    }
+
     &__link {
-        margin: toRem(20);
+        margin: toRem(0) toRem(20);
+        width: toRem(50);
+        height: toRem(50);
     }
 }

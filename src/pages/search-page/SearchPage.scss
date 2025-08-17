@@ -1,0 +1,9 @@
+@import '../../scss/functions/px-to-rem.scss';
+@import '../../scss/mixins/breakpoints.scss';
+@import '../../scss/mixins/variables.scss';
+
+.search-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -7,8 +7,14 @@
   background-color: $color_bg;
   min-width: 100vw;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   &__nav, &__footer {
     background-color: $emphasis_dark;
+  }
+
+  &__main {
+    flex-grow: 1;
   }
 }
