@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: toRem(1065);
+    margin: 0 auto;
     border: 2px black solid;
 
     @include breakpoint-above(sm) {
@@ -20,8 +22,19 @@
             max-width: 100%;
 
                 @include breakpoint-above(sm) {
-                    max-height: toRem(500);
+                    max-height: toRem(600);
+                    max-width: toRem(600);
                 }
         }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(5);
+        font-size: toRem(22);
+        background-color: $color_secondary;
+        padding: toRem(30);
+        margin: toRem(15);
     }
 }

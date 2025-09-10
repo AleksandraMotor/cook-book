@@ -26,7 +26,7 @@ const RecipePage = () => {
         >
             <h1 className="recipe-page__title">{recipe.name}</h1>
             <section>
-                <RecipeBanner name={recipe.name} description={recipe.description} img={recipe.img}/>
+                <RecipeBanner name={recipe.name} description={recipe.description} img={recipe.img} category={recipe.category}/>
             </section>
         </article>
     );

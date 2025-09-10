@@ -100,7 +100,7 @@ export const Data = [
         name: 'banana pancakes with blueberries',
         img: pancakes,
         category: ['healthy', 'quick snack', 'breakfast&brunch', 'quick&easy', 'pancakes'],
-        description: 'Placki z bananów z borówkami',
+        description: 'Placki z bananów z borówkami. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
         ingredients: ['eggs'],
         // time: {
         //     prepTime: '5 min',
