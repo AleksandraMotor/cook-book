@@ -1,0 +1,21 @@
+@import '../../scss/functions/px-to-rem.scss';
+@import '../../scss/mixins/breakpoints.scss';
+@import '../../scss/mixins/variables.scss';
+
+.nav {
+    width: 100%;
+    height: toRem(100);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint-above(md) {
+        max-width: toRem(1064);
+    }
+
+    &__list {
+        display: flex;
+        gap: toRem(5);
+        margin: 0 toRem(10);
+    }
+}

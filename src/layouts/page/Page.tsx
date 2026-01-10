@@ -1,6 +1,9 @@
 import { useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router";
 import HomePage from "../../pages/home-page/HomePage";
+import WorkInProgress from "../../pages/work-in-progress/WorkInProgress";
+import RecipesPage from "../../pages/recipes-page/RecipesPage";
+import RecipePage from "../../pages/recipe-page/RecipePage";
 
 const ScrollToTop = (props: { children: any; }) => {
     const location = useLocation();
@@ -20,8 +23,9 @@ const Page = () => {
         <ScrollToTop>
             <Routes>
                 <Route path='/' element={<HomePage/>}/>
-                <Route path='/halloween' element={<div>next</div>}/>
-                <Route path='/contact' element={<div>next 2</div>}/>
+                <Route path='/recipes' element={<RecipesPage/>}/>
+                <Route path='/recipes/:id' element={<RecipePage/>}/>
+                <Route path='*' element={<WorkInProgress/>}/>
             </Routes>
         </ScrollToTop>
     );

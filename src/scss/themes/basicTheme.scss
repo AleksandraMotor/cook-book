@@ -1,0 +1,34 @@
+@import '../mixins/variables.scss';
+@import '../mixins/breakpoints.scss';
+@import '../functions/px-to-rem.scss';
+
+.app {
+  background-color: $color_bg;
+
+  &__nav {
+    background-color: $emphasis_dark;
+    color: $color_light;
+  }
+
+  &__main {
+    min-height: calc(100vh - 150px);
+    width: 100%;
+  }
+
+  &__footer {
+    background-color: $emphasis_dark;
+    color: $color_light;
+  }
+}
+
+.section-unit {
+  border: toRem(2) solid $emphasis_dark;
+  border-radius: toRem(10);
+  padding: toRem(20) toRem(10);
+}
+
+.title-unit {
+  border: toRem(2) solid $emphasis_dark;
+  border-radius: toRem(10);
+  padding: toRem(20) toRem(10);
+}

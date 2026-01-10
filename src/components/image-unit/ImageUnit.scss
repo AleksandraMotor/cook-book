@@ -1,0 +1,12 @@
+@import '../../scss/themes/basicTheme.scss';
+
+.image-unit-wrapper {
+    width: toRem(500);
+    height: toRem(500);
+}
+
+.image-unit {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

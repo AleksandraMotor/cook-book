@@ -1,0 +1,16 @@
+@import '../../scss/functions/px-to-rem.scss';
+@import '../../scss/mixins/breakpoints.scss';
+@import '../../scss/mixins/variables.scss';
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: toRem(15);
+
+    @include breakpoint-above(md) {
+      max-width: toRem(1064);
+    }
+}
